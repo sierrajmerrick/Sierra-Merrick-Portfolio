@@ -320,6 +320,27 @@ td {
   background-color: #242124;
 }
 
+.copy-button:hover::after {
+  content: " (CLICK TO COPY)";
+  font-size: 10px;
+  display: block;
+  margin-top: 5px;
+}
+
+.alert-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242124;
+  border: .5rem solid #824670;
+  padding: 2rem;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 0 0 100vmax rgba(0,0,0,0.7);
+}
+
 textarea {
   resize: none;
   width: 50%;
