@@ -154,7 +154,7 @@ button:hover {
   list-style-type: none;
   justify-content: space-evenly;
   padding: 2rem;
-  margin: 0;
+  margin: 2rem;
 }
 
 .weather-widget, .clock-widget, .calculator-widget {
