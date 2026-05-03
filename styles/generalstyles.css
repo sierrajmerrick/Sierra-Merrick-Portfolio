@@ -1,10 +1,10 @@
 html {
   background-image: linear-gradient(#000000, #143109, #000000);
-  color: #E2F4E2;
+  color: #e2f4e2;
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
-  height:auto;
+  height: auto;
   width: auto;
   font-size: 16px;
   line-height: 2rem;
@@ -25,71 +25,72 @@ body {
   font-style: normal;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   line-height: 1.8;
   font-family: "Press Start 2P", system-ui;
 }
 
 h1 {
   font-size: 32px;
-  text-shadow: .18rem .18rem 0rem #1B4D3E;
-  color: #ACE1AF;
+  text-shadow: 0.18rem 0.18rem 0rem #1b4d3e;
+  color: #ace1af;
 }
 
 h2 {
   font-size: 28px;
-  text-shadow: .18rem .18rem 0rem #1B4D3E;
-  color: #ACE1AF;
+  text-shadow: 0.18rem 0.18rem 0rem #1b4d3e;
+  color: #ace1af;
 }
 
 h3 {
   font-size: 24px;
-  text-shadow: .1rem .1rem 0rem #A52D0F;
-  color: #EE6C4D;
+  text-shadow: 0.1rem 0.1rem 0rem #a52d0f;
+  color: #ee6c4d;
 }
 
 h4 {
   font-size: 20px;
-  text-shadow: .1rem .1rem 0rem #A52D0F;
-  color: #EE6C4D;
+  text-shadow: 0.1rem 0.1rem 0rem #a52d0f;
+  color: #ee6c4d;
 }
 
 p {
-  color: #E2F4E2;
+  color: #e2f4e2;
   font-size: 16px;
 }
 
 a {
-  color: #7C9ED9;
-  text-shadow: .2rem .2rem 0rem #111111;
+  color: #7c9ed9;
+  text-shadow: 0.2rem 0.2rem 0rem #111111;
 }
 
 /* link styles */
 
 .main-nav a:hover {
-  color: #ADD8E6;
-  text-shadow: .2rem .2rem 0rem #111111;
+  color: #add8e6;
+  text-shadow: 0.2rem 0.2rem 0rem #111111;
 }
 
-.main-nav a:hover::before{
+.main-nav a:hover::before {
   content: "> ";
-  color: #ADD8E6;
-  text-shadow: .2rem .2rem 0rem #111111;
+  color: #add8e6;
+  text-shadow: 0.2rem 0.2rem 0rem #111111;
 }
-
-
 
 /* general styles */
 html {
   background-image: linear-gradient(#000000, #143109, #000000);
-  color: #E2F4E2;
+  color: #e2f4e2;
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
-  height:auto;
+  height: auto;
   width: auto;
   font-size: 16px;
-
 }
 
 body {
@@ -100,15 +101,15 @@ body {
 
 button {
   font-family: "Press Start 2P", system-ui;
-  background-color:#FFBC42;
+  background-color: #ffbc42;
   color: #242124;
-  border: .5rem solid #CF8600;
+  border: 0.5rem solid #cf8600;
   padding: 1rem 2rem;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #FFCB6B;
+  background-color: #ffcb6b;
 }
 
 /* section styles */
@@ -118,11 +119,11 @@ button:hover {
   align-items: center;
   justify-content: center;
   height: auto;
-  width:auto;
-  border: .5rem solid #824670;
+  width: auto;
+  border: 0.5rem solid #824670;
   background-color: #242124;
   margin: 4rem;
-  padding:2rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -149,22 +150,27 @@ button:hover {
   align-items: center;
   justify-content: center;
   height: auto;
-  width:auto;
-  border: .5rem solid #824670;
+  width: auto;
+  border: 0.5rem solid #824670;
   background-color: #242124;
   margin: 4rem;
-  padding:2rem;
+  padding: 2rem;
   text-align: center;
 }
 
 @media (max-width: 600px) {
-  .hero-section, .menu-section {
+  .hero-section,
+  .menu-section {
     margin: 1rem;
     padding: 1rem;
   }
 
-  h1 { font-size: 20px; }
-  p { font-size: 14px; }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
 }
 
 /* widgets section styles */
@@ -188,8 +194,10 @@ button:hover {
   box-sizing: border-box;
 }
 
-.weather-widget, .clock-widget, .calculator-widget {
-  border: .4rem solid #824670;
+.weather-widget,
+.clock-widget,
+.calculator-widget {
+  border: 0.4rem solid #824670;
   background-color: #242124;
   padding: 2rem;
   font-family: "Press Start 2P", system-ui;
@@ -212,9 +220,9 @@ button:hover {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 4rem auto;
   padding: 0;
   list-style: none;
@@ -225,7 +233,7 @@ button:hover {
 }
 
 .project-list p {
-  color: #E2F4E2;
+  color: #e2f4e2;
   font-family: "Press Start 2P", system-ui;
 }
 
@@ -236,7 +244,7 @@ button:hover {
 .card-img {
   width: 100%;
   height: auto;
-  border: .4rem solid #BAD4BB;
+  border: 0.4rem solid #bad4bb;
   box-sizing: border-box;
 }
 
@@ -246,7 +254,7 @@ button:hover {
   flex-direction: column;
   text-decoration: none;
   background-color: #242124;
-  border: .4rem solid #824670;
+  border: 0.4rem solid #824670;
   padding: 1.5rem;
   box-sizing: border-box;
 }
@@ -263,30 +271,31 @@ button:hover {
 .project-description {
   margin-top: 1rem;
   font-size: 14px;
-  color: #ACE1AF;
+  color: #ace1af;
   font-family: "Press Start 2P", system-ui;
 }
 
 /* resume section styles */
 
 .resume-section {
-  border: .4rem solid #824670;
+  border: 0.4rem solid #824670;
   background-color: #242124;
   padding: 2rem;
   margin-bottom: 2rem;
 }
 
 table {
-    table-layout: auto;
+  table-layout: auto;
 }
 
-th, td {
-    padding:1rem;
-    max-width:1920px;
-    color:#E2F4E2;
-    text-align:left;
-    border:.5rem #824670;
-    border-style: solid;
+th,
+td {
+  padding: 1rem;
+  max-width: 1920px;
+  color: #e2f4e2;
+  text-align: left;
+  border: 0.5rem #824670;
+  border-style: solid;
 }
 
 /* contact form styles */
@@ -301,22 +310,22 @@ th, td {
 }
 
 .contact-form {
-  border:1rem #824670 ;
+  border: 1rem #824670;
   border-style: solid;
   padding: 1rem;
   margin: 3rem;
-  width:60vw;
-  color: #ACE1AF;
+  width: 60vw;
+  color: #ace1af;
   text-align: center;
   background-color: #242124;
 }
 
 textarea {
-    resize:none;
-    width: 50%;
-    background-color:#FFFAF0;
+  resize: none;
+  width: 50%;
+  background-color: #fffaf0;
 }
 
-input { 
-  font-family: "Press Start 2P", system-ui;;
+input {
+  font-family: "Press Start 2P", system-ui;
 }
