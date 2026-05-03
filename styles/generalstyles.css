@@ -157,6 +157,16 @@ button:hover {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .hero-section, .menu-section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h1 { font-size: 20px; }
+  p { font-size: 14px; }
+}
+
 /* widgets section styles */
 .widgets-section {
   display: flex;
