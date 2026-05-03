@@ -1,0 +1,287 @@
+/* text styles */
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 32px;
+  text-shadow: .18rem .18rem 0rem #1B4D3E;
+  font-family: "Press Start 2P", system-ui;
+  color: #ACE1AF;
+}
+
+h2 {
+  font-size: 28px;
+  text-shadow: .18rem .18rem 0rem #1B4D3E;
+  font-family: "Press Start 2P", system-ui;
+  color: #ACE1AF;
+}
+
+h3 {
+  font-size: 24px;
+  text-shadow: .1rem .1rem 0rem #A52D0F;
+  font-family: "Press Start 2P", system-ui;
+  color: #EE6C4D;
+}
+
+h4 {
+  font-size: 20px;
+  text-shadow: .1rem .1rem 0rem #A52D0F;
+  font-family: "Press Start 2P", system-ui;
+  color: #EE6C4D;
+}
+
+p {
+  font-family: "Press Start 2P", system-ui;
+  color: #E2F4E2;
+  font-size: 16px;
+}
+
+a {
+  color: #7C9ED9;
+  text-shadow: .2rem .2rem 0rem #111111;
+}
+
+/* link styles */
+
+.main-nav a:hover {
+  color: #ADD8E6;
+  text-shadow: .2rem .2rem 0rem #111111;
+}
+
+.main-nav a:hover::before{
+  content: "> ";
+  color: #ADD8E6;
+  text-shadow: .2rem .2rem 0rem #111111;
+}
+
+
+
+/* general styles */
+html {
+  background-image: linear-gradient(#000000, #143109, #000000);
+  color: #E2F4E2;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  height:auto;
+  width: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", system-ui;
+}
+
+button {
+  font-family: "Press Start 2P", system-ui;
+  background-color:#FFBC42;
+  color: #242124;
+  border: .5rem solid #CF8600;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FFCB6B;
+}
+
+/* section styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width:auto;
+  border: .5rem solid #824670;
+  background-color: #242124;
+  margin: 4rem;
+  padding:2rem;
+  text-align: center;
+}
+
+.home-header {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.general-header {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.main-nav ul {
+  text-align: center;
+  padding: 1rem;
+  line-height: 3rem;
+  list-style-type: none;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width:auto;
+  border: .5rem solid #824670;
+  background-color: #242124;
+  margin: 4rem;
+  padding:2rem;
+  text-align: center;
+}
+
+/* widgets section styles */
+.widgets-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: none;
+  gap: 2rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.widgets-list {
+  display: flex;
+  gap: 5rem;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-widget, .clock-widget, .calculator-widget {
+  border: .4rem solid #824670;
+  background-color: #242124;
+  padding: 2rem;
+  font-family: "Press Start 2P", system-ui;
+  text-align: center;
+}
+
+/* projects section styles */
+
+.filter-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  list-style-type: none;
+}
+
+.projects-section {
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+}
+
+.project-list a {
+  text-decoration: none;
+}
+
+.project-list p {
+  color: #E2F4E2;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.project-item {
+  background-color: #242124;
+  border: .4rem solid #824670;
+  padding: 1.5rem;
+  list-style-type: none;
+  width: 300px;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border: .4rem solid #BAD4BB;
+}
+
+.project-card {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.project-item:hover {
+  background-color: #111111;
+  box-shadow: .5rem .5rem 0rem #1B4D3E;
+}
+
+.project-description {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #ACE1AF;
+  font-family: "Press Start 2P", system-ui;
+}
+
+/* resume section styles */
+
+.resume-section {
+  border: .4rem solid #824670;
+  background-color: #242124;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+table {
+    table-layout: auto;
+}
+
+th, td {
+    padding:1rem;
+    max-width:1920px;
+    color:#E2F4E2;
+    text-align:left;
+    border:.5rem #824670;
+    border-style: solid;
+}
+
+/* contact form styles */
+
+.contact-info-section {
+  text-align: center;
+}
+
+.message-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  border:1rem #824670 ;
+  border-style: solid;
+  padding: 1rem;
+  margin: 3rem;
+  width:60vw;
+  color: #ACE1AF;
+  text-align: center;
+  background-color: #242124;
+}
+
+textarea {
+    resize:none;
+    width: 50%;
+    background-color:#FFFAF0;
+}
+
+input { 
+  font-family: "Press Start 2P", system-ui;;
+}

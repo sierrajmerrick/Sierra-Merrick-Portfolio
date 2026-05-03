@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&display=swap');
+    </style> 
+    <link rel="stylesheet" href="styles/generalstyles.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="general-header">
+        <a href="./menu.html">
+                <button class="menu-button">Main Menu</button>
+            </a>
+    </header>
+    <main>
+        <section class="hero-section">
+            <p>Hello, my name is:</p> 
+            <h1>Sierra Merrick</h1>
+            <h2>Welcome to my Portfolio!</h2>
+            <p>This is a collection of my work and projects. Feel free to explore and learn more about me.</p>
+            <a href="./projects.html">
+                <button class="hero-button">Press Start</button>
+            </a>
+        </section>
+        <section class="widgets-section">
+            <ul class="widgets-list">
+                <li class="weather-widget">
+                    <h3>Weather in Missoula</h3>
+                    <div id="weather-output">
+                    <script src="./scripts/weather.js"></script>
+                    </div>
+                </li>
+                <li class="clock-widget">
+                    <h3>Universal Time</h3>
+                    <div id="clock-output">
+                    <script src="./scripts/clock.js"></script>
+                    </div>
+                </li>
+                <li class="calculator-widget">
+                    <h3>Calculator</h3>
+                    <div id="calculator-output">
+                    <script src="./scripts/calculator.js"></script>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    
+</body>
+</html>
