@@ -386,6 +386,10 @@ footer {
   display: flex;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .card-img {
   width: 100%;
   height: auto;
