@@ -101,6 +101,10 @@ html {
   font-size: 16px;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -192,6 +196,20 @@ footer {
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
+}
+
+.about-section {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  border: 0.5rem solid #824670;
+  background-color: #242124;
+  margin: 4rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 /* widgets section styles */
