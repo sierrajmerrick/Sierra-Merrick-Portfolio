@@ -71,7 +71,7 @@ a {
 /* link styles */
 
 .main-nav ul {
-  display: flex;            
+  display: flex;     
   gap: 2rem;                
   list-style-type: none;
   padding: 0;
@@ -134,20 +134,45 @@ button:hover {
   text-align: center;
 }
 
-.home-header {
-  text-align: right;
-  margin-bottom: 2rem;
-}
-
 .general-header {
   display: flex;
   flex-direction: row;  
-  justify-content: space-between; 
+  justify-content: center; 
   align-items: center; 
   gap: 1rem; 
   padding: 1.5rem 2rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+.skills-section {
+  margin: 3rem;
+  text-align: center;
+}
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.skills-list li {
+  border: 0.4rem solid #824670;
+  background-color: #242124;
+  padding: .5rem;
+}
+
+.featured-projects-section {
+  text-align: center;
+}
+
+footer {
+  margin-top: 6rem;
 }
 
 @media (max-width: 600px) {
@@ -163,6 +188,10 @@ button:hover {
   p {
     font-size: 14px;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
 }
 
 /* widgets section styles */
