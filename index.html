@@ -16,7 +16,9 @@
     <header class="general-header">
       <nav class="main-nav">
         <ul>
-          <li><a href="./index.html" class="active">Home</a></li>
+          <li>
+            <a href="./index.html" class="active" aria-current="page">Home</a>
+          </li>
           <li><a href="./projects.html">Projects</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./resume.html">Resume</a></li>
@@ -50,7 +52,7 @@
                 <h3 class="card-title">Non-Profit Website</h3>
                 <img
                   src="./images/dcp.jpg"
-                  alt="image displaying a screenshot from Daisy Chain Presents website"
+                  alt="Daisy Chain Presents website homepage"
                   class="card-img"
                 />
               </a>
@@ -66,7 +68,7 @@
                 <h3 class="card-title">ISP Website</h3>
                 <img
                   src="./images/cis.jpg"
-                  alt="image displaying a screenshot from Centric Integrated Systems website"
+                  alt="Centric Integrated Systems website homepage"
                   class="card-img"
                 />
               </a>
@@ -82,7 +84,7 @@
                 <h3 class="card-title">E-commerce Website</h3>
                 <img
                   src="./images/apcc.jpg"
-                  alt="image displaying a screenshot from A Peculiar Clothing Co website"
+                  alt="A Peculiar Clothing Co. website homepage"
                   class="card-img"
                 />
               </a>
@@ -91,7 +93,7 @@
         </ul>
       </section>
 
-       <section class="skills-section">
+      <section class="skills-section">
         <h2>My Toolbox</h2>
         <ul class="skills-list">
           <li>HTML</li>
@@ -118,6 +120,11 @@
                 <div class="hand second-hand" id="second-hand"></div>
               </div>
             </div>
+            <div
+              id="clock-reader-text"
+              class="sr-only"
+              aria-live="polite"
+            ></div>
           </li>
           <li class="calculator-widget">
             <h3>Calculate Something</h3>
@@ -127,69 +134,123 @@
                 id="calc-display"
                 class="calc-display"
                 disabled
+                aria-live="polite"
+                aria-label="Calculator display"
               />
               <div class="calc-buttons">
-                <button class="calc-button-clear" onclick="clearDisplay()">
+                <button
+                  class="calc-button-clear"
+                  onclick="clearDisplay()"
+                  aria-label="clear"
+                >
                   C
                 </button>
                 <button
                   class="calc-button-operator"
                   onclick="appendOperation('/')"
+                  aria-label="divide"
                 >
                   /
                 </button>
                 <button
                   class="calc-button-operator"
                   onclick="appendOperation('*')"
+                  aria-label="multiply"
                 >
                   *
                 </button>
                 <button
                   class="calc-button-operator"
                   onclick="appendOperation('-')"
+                  aria-label="minus"
                 >
                   -
                 </button>
 
-                <button class="calc-button" onclick="appendNumber('7')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('7')"
+                  aria-label="seven"
+                >
                   7
                 </button>
-                <button class="calc-button" onclick="appendNumber('8')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('8')"
+                  aria-label="eight"
+                >
                   8
                 </button>
-                <button class="calc-button" onclick="appendNumber('9')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('9')"
+                  aria-label="nine"
+                >
                   9
                 </button>
                 <button
                   class="calc-button-operator"
                   onclick="appendOperation('+')"
+                  aria-label="plus"
                 >
                   +
                 </button>
 
-                <button class="calc-button" onclick="appendNumber('4')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('4')"
+                  aria-label="four"
+                >
                   4
                 </button>
-                <button class="calc-button" onclick="appendNumber('5')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('5')"
+                  aria-label="five"
+                >
                   5
                 </button>
-                <button class="calc-button" onclick="appendNumber('6')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('6')"
+                  aria-label="six"
+                >
                   6
                 </button>
-                <button class="calc-button-equal" onclick="calculate()">
+                <button
+                  class="calc-button-equal"
+                  onclick="calculate()"
+                  aria-label="equal"
+                >
                   =
                 </button>
 
-                <button class="calc-button" onclick="appendNumber('1')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('1')"
+                  aria-label="one"
+                >
                   1
                 </button>
-                <button class="calc-button" onclick="appendNumber('2')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('2')"
+                  aria-label="two"
+                >
                   2
                 </button>
-                <button class="calc-button" onclick="appendNumber('3')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('3')"
+                  aria-label="three"
+                >
                   3
                 </button>
-                <button class="calc-button" onclick="appendNumber('0')">
+                <button
+                  class="calc-button"
+                  onclick="appendNumber('0')"
+                  aria-label="zero"
+                >
                   0
                 </button>
               </div>
@@ -197,7 +258,6 @@
           </li>
         </ul>
       </section>
-     
     </main>
     <footer>
       <p>2026 Sierra Merrick | Built with HTML, CSS, JS, and whimsy!</p>
