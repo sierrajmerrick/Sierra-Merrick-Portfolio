@@ -186,22 +186,134 @@ button:hover {
 
 .widgets-list {
   display: flex;
-  gap: 5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
   list-style-type: none;
-  justify-content: space-evenly;
-  padding: 0 1rem;
+  padding: 0;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .weather-widget,
 .clock-widget,
 .calculator-widget {
+  flex: 1 1 300px;
+  max-width: 400px;
   border: 0.4rem solid #824670;
   background-color: #242124;
-  padding: 2rem;
-  font-family: "Press Start 2P", system-ui;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
   text-align: center;
+}
+
+/* calculator styles */
+
+#calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc-button,
+.calc-button-operator,
+.calc-button-clear,
+.calc-button-equal {
+  padding: 10px 5px;
+  font-size: 1rem;
+  margin: 0;
+  width: 100%;
+}
+
+.calc-display {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #ace1af;
+  border-radius: 8px;
+  color: #242124;
+}
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+.calc-button {
+  background-color: #824670;
+  border: none;
+  font-size: 1.5rem;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+
+/* clock styles */
+
+#clock {
+    width: 200px;  
+  height: 200px;
+  border: .5rem solid #824670;
+  padding: 10px;
+  background:#ace1af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#clock::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #824670;
+  z-index: 10;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  width: 50%;
+  background:#242124;
+  position: absolute;
+  top: 50%;
+    left: 0;   
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 0.2s steps(60); 
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  height: 8px;
+   width: 35%; 
+   left: 15%;  
+}
+.minute-hand {
+  height: 5px;
+  width: 45%;
+  left: 5%;
+}
+.second-hand {
+  height: 2px;
+  background:#a52d0f;
 }
 
 /* projects section styles */
@@ -334,11 +446,11 @@ td {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #242124;
-  border: .5rem solid #824670;
+  border: 0.5rem solid #824670;
   padding: 2rem;
   z-index: 1000;
   text-align: center;
-  box-shadow: 0 0 0 100vmax rgba(0,0,0,0.7);
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
 }
 
 textarea {

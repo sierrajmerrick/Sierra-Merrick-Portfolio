@@ -37,14 +37,90 @@
             </div>
           </li>
           <li class="clock-widget">
-            <h3>Universal Time</h3>
-            <div id="clock-output">
+            <h3>Time in Missoula</h3>
+            <div id="clock">
+              <div class="clock-face">
+                <div class="hand hour-hand" id="hour-hand"></div>
+                <div class="hand minute-hand" id="minute-hand"></div>
+                <div class="hand second-hand" id="second-hand"></div>
+              </div>
               <script src="./scripts/clock.js"></script>
             </div>
           </li>
           <li class="calculator-widget">
             <h3>Calculator</h3>
-            <div id="calculator-output">
+            <div id="calculator">
+              <input
+                type="text"
+                id="calc-display"
+                class="calc-display"
+                disabled
+              />
+              <div class="calc-buttons">
+                <button class="calc-button-clear" onclick="clearDisplay()">
+                  C
+                </button>
+                <button
+                  class="calc-button-operator"
+                  onclick="appendOperation('/')"
+                >
+                  /
+                </button>
+                <button
+                  class="calc-button-operator"
+                  onclick="appendOperation('*')"
+                >
+                  *
+                </button>
+                <button
+                  class="calc-button-operator"
+                  onclick="appendOperation('-')"
+                >
+                  -
+                </button>
+
+                <button class="calc-button" onclick="appendNumber('7')">
+                  7
+                </button>
+                <button class="calc-button" onclick="appendNumber('8')">
+                  8
+                </button>
+                <button class="calc-button" onclick="appendNumber('9')">
+                  9
+                </button>
+                <button
+                  class="calc-button-operator"
+                  onclick="appendOperation('+')"
+                >
+                  +
+                </button>
+
+                <button class="calc-button" onclick="appendNumber('4')">
+                  4
+                </button>
+                <button class="calc-button" onclick="appendNumber('5')">
+                  5
+                </button>
+                <button class="calc-button" onclick="appendNumber('6')">
+                  6
+                </button>
+                <button class="calc-button-equal" onclick="calculate()">
+                  =
+                </button>
+
+                <button class="calc-button" onclick="appendNumber('1')">
+                  1
+                </button>
+                <button class="calc-button" onclick="appendNumber('2')">
+                  2
+                </button>
+                <button class="calc-button" onclick="appendNumber('3')">
+                  3
+                </button>
+                <button class="calc-button" onclick="appendNumber('0')">
+                  0
+                </button>
+              </div>
               <script src="./scripts/calculator.js"></script>
             </div>
           </li>
