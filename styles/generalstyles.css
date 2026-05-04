@@ -99,6 +99,14 @@ body {
   font-family: "Press Start 2P", system-ui;
 }
 
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 button {
   font-family: "Press Start 2P", system-ui;
   background-color: #ffbc42;
@@ -112,7 +120,6 @@ button:hover {
   background-color: #ffcb6b;
 }
 
-/* section styles */
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -133,15 +140,22 @@ button:hover {
 }
 
 .general-header {
-  text-align: right;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 1rem; 
+  padding: 1.5rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .main-nav ul {
-  text-align: center;
-  padding: 1rem;
-  line-height: 3rem;
+  display: flex;            
+  gap: 2rem;                
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-section {

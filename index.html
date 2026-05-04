@@ -7,13 +7,21 @@
       @import url("https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&display=swap");
     </style>
     <link rel="stylesheet" href="styles/generalstyles.css" />
+    <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/clock.js" defer></script>
+    <script src="./scripts/calculator.js" defer></script>
     <title>Home</title>
   </head>
   <body>
     <header class="general-header">
-      <a href="./menu.html">
-        <button class="menu-button">Main Menu</button>
-      </a>
+      <nav class="main-nav">
+    <ul>
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
     </header>
     <main>
       <section class="hero-section">
@@ -33,7 +41,6 @@
           <li class="weather-widget">
             <h3>Weather in Missoula</h3>
             <div id="weather-output">
-              <script src="./scripts/weather.js"></script>
             </div>
           </li>
           <li class="clock-widget">
@@ -44,7 +51,6 @@
                 <div class="hand minute-hand" id="minute-hand"></div>
                 <div class="hand second-hand" id="second-hand"></div>
               </div>
-              <script src="./scripts/clock.js"></script>
             </div>
           </li>
           <li class="calculator-widget">
@@ -121,7 +127,6 @@
                   0
                 </button>
               </div>
-              <script src="./scripts/calculator.js"></script>
             </div>
           </li>
         </ul>
